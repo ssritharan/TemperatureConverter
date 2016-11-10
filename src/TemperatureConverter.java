@@ -32,7 +32,7 @@ public class TemperatureConverter {
 	    
 	}
 	
-	private static float toDegCtoF(float tempC)
+	private static float toDegCtoF(float Y)
 	{
 	    // Some code here where plumber does his thing - I don't even
 	    // know what he does because I don't have to pay attention
@@ -42,11 +42,11 @@ public class TemperatureConverter {
 		//T(°F) = T(°C) × 9/5 + 32 
 		float tempF= 0;
 		
-		tempF = (tempC * (9/5)) + 32;
+		tempF = (Y * (9/5)) + 32;
 		
 		return tempF;
 	}
-	private static float toDegFtoC(float tempF)
+	private static float toDegFtoC(float X)
 	{
 	    // Some code here where plumber does his thing - I don't even
 	    // know what he does because I don't have to pay attention
@@ -56,7 +56,8 @@ public class TemperatureConverter {
 		//  T(°C) = (T(°F) - 32)x5/9
 		float tempC = 0;
 		
-		tempC = ((tempF - 32) * (5/9));
+		tempC = ((X - 32) * (5/9));
+		System.out.println(tempC + " C is " );
 		
 		return tempC;
 	}
